@@ -1,0 +1,10 @@
+<form [formGroup]="formulaire" (submit)="save()">
+    <label for="name">Name :</label>
+    <input type="text" formControlName="name" id="name">
+    <label for="title">Title :</label>
+    <input type="text" formControlName="title" id="title">
+    <label for="key">Key :</label>
+    <input type="text" formControlName="key" id="key">
+    <label for="active">Active :</label>
+    <input type="boolean" formControlName="active" id="active">
+</form>

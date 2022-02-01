@@ -1,0 +1,8 @@
+<h2>Liste des champions enregistrés</h2>
+<div *ngFor="let champion of championsList" class="champion">
+    <button (click)=delete(champion)>Sup.</button>
+    <p (click)=selectChampion(champion)>{{champion.name}}</p>
+</div>
+
+<div *ngIf="selectedChampion">
+</div>
